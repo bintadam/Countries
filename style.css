@@ -15,11 +15,39 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     height: 100vh;
-    color: #f1f1f1;
-    background-color: rgb(251, 243, 229);
+    color: rgb(229, 231, 232);
 } 
 
 .hero{
-    background: url('/images/globe.jpeg');
-    filter: blur(50%);
+    background-image: url('images/globe.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    position: relative;
+    height: 60rem;
+}
+
+.hero-image{
+    height: 20rem;
+}
+
+h1{
+    position: absolute;
+    top: 15rem;
+    left: 30%;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    font-weight: 500;
+
+}
+
+.btn{
+    position: absolute;
+    top: 20rem;
+    background-color: blueviolet;
+    border: none;
+}
+
+.hero img{
+    height: 2rem;
 }
