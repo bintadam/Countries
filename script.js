@@ -192,4 +192,11 @@ const countries = [
     'Yemen',
     'Zambia',
     'Zimbabwe'
-  ]
+]
+
+const btnStart = document.querySelector(".btn-start");
+const btnSearch =  document.querySelector('.btn-search');
+const btnSort =  document.querySelector(".btn-sort");
+
+const countriesLength = countries.length
+console.log(countriesLength)

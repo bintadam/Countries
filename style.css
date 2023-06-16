@@ -15,7 +15,7 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     height: 100vh;
-    color: rgb(229, 231, 232);
+    color: #ffffff;
 } 
 
 .hero{
@@ -33,21 +33,35 @@ body{
 
 h1{
     position: absolute;
-    top: 15rem;
+    top: 18rem;
     left: 30%;
-    letter-spacing: 2px;
-    font-size: 4rem;
-    font-weight: 500;
-
+    letter-spacing: 3px;
+    font-size: 5rem;
+    font-weight: 600;
 }
 
 .btn{
     position: absolute;
-    top: 20rem;
+    top: 35rem;
     background-color: blueviolet;
     border: none;
+    font-size: 1.7rem;
+    color: #fff;
 }
 
-.hero img{
-    height: 2rem;
+.btn-start{
+    left: 35%;
+    padding: 10px 13px;
+}
+.btn-search{
+    left: 47%;
+    padding: 10px;
+}
+
+.img{
+    position: absolute;
+    top: 35rem;
+    left: 63%;
+    background-color: blueviolet;
+    padding: 5px;
 }
