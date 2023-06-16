@@ -33,16 +33,25 @@ body{
 
 h1{
     position: absolute;
-    top: 18rem;
-    left: 30%;
+    top: 16rem;
+    left: 25%;
     letter-spacing: 3px;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 600;
+}
+
+form input{
+    position: absolute;
+    left: 32%;
+    top: 42rem;
+    border: none;
+    padding: 1.2rem 17rem;
+    border-radius: 10rem;
 }
 
 .btn{
     position: absolute;
-    top: 35rem;
+    top: 34rem;
     background-color: blueviolet;
     border: none;
     font-size: 1.7rem;
@@ -51,17 +60,15 @@ h1{
 
 .btn-start{
     left: 35%;
-    padding: 10px 13px;
+    padding: 12px 13px;
 }
 .btn-search{
-    left: 47%;
-    padding: 10px;
+    left: 46.2%;
+    padding: 12px;
 }
 
-.img{
-    position: absolute;
-    top: 35rem;
-    left: 63%;
+.btn-sort{
+    left: 62%;
     background-color: blueviolet;
-    padding: 5px;
+    padding: 4px;
 }
