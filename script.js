@@ -18,20 +18,41 @@ const country = countries.forEach(wadan => {
     container.appendChild(card);
 })
 
-window.onLoad = function(){
-    const search = document.querySelector("#search").value
-    console.log(search)
-}
 const startingWord = (countries, startWord) => {
     const result = countries.filter(country => country.startsWith(startWord))
     console.log(result)
     return result
 }
 
+let toggle = false
 
 btnStart.addEventListener("click", function(e){
     e.preventDefault()
     btnStart.style.backgroundColor = "rgb(98, 23, 169)"
     const numOfCountries = startingWord(countries, search)
     console.log(numOfCountries)
+})
+
+btnSort.addEventListener("click", function(e){
+    e.preventDefault()
+    const img = document.getElementById("img");
+    container.innerHTML = "";
+
+    if(!toggle){
+        img.src = 'images/sort1.png'
+        toggle = true;
+        countries.sort((a,b) => a.localeComapare(b));
+    } else{
+        img.src = "images/sort.png"
+        toggle= false;
+        countries.sort((a, b) => b.localeCompare(a));
+    }
+    countries.forEach(country => {
+        let capitalCountry = country.toUpperCase();
+        let card = document.createElement("div");
+        card.className = "card";
+        card.textContent = capitalCountry;
+        container.appendChild(card);
+    });
+    
 })

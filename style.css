@@ -28,10 +28,6 @@ body{
     height: 60rem;
 }
 
-.hero-image{
-    height: 20rem;
-}
-
 h1{
     position: absolute;
     top: 16rem;
@@ -39,6 +35,10 @@ h1{
     letter-spacing: 3px;
     font-size: 6rem;
     font-weight: 600;
+}
+
+#img{
+    height: 3.3rem;
 }
 
 form input{
