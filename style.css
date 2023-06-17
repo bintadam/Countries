@@ -59,7 +59,7 @@ form input{
 .btn{
     position: absolute;
     top: 34rem;
-    background-color: blueviolet;
+    background-color: rgb(163, 81, 240);
     border: none;
     font-size: 1.7rem;
     color: #fff;
@@ -76,6 +76,6 @@ form input{
 
 .btn-sort{
     left: 62%;
-    background-color: blueviolet;
+    background-color: rgb(163, 81, 240);
     padding: 4px;
 }
