@@ -1,6 +1,7 @@
 const btnStart = document.querySelector(".btn-start");
 const btnSearch =  document.querySelector('.btn-search');
 const btnSort =  document.querySelector(".btn-sort");
+const searchInput = document.getElementById("search")
 const hero = document.querySelector(".hero")
 
 const container = document.getElementById("cardContainer");
@@ -17,24 +18,28 @@ function createCard(content) {
     container.appendChild(card);
 }
 
-const startingWord = (countries, startWord) => {
+const startingWord = (countries) => {
+    let startWord = searchInput.value
     const result = countries.filter(country => country.startsWith(startWord))
     console.log(result)
     return result
 }
 
-let toggle = false
 
 btnStart.addEventListener("click", function(e){
     e.preventDefault()
     btnStart.style.backgroundColor = "rgb(98, 23, 169)"
-    const numOfCountries = startingWord(countries, search)
-    console.log(numOfCountries)
-    numOfCountries.forEach(country => {
-        createCard(country)
+    searchInput.addEventListener("input", function(e){
+        container.innerHTML = "";
+        const numOfCountries = startingWord(countries);
+        console.log(numOfCountries)
+        numOfCountries.forEach(country => {
+            createCard(country)
+        })
     })
 })
 
+let toggle = false
 btnSort.addEventListener("click", function(e){
     e.preventDefault()
     const img = document.getElementById("img");
