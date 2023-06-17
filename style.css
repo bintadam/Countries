@@ -49,6 +49,13 @@ form input{
     border-radius: 10rem;
 }
 
+.search{
+    position: absolute;
+    left: 66%;
+    top: 42rem;
+    height: 4rem;
+}
+
 .btn{
     position: absolute;
     top: 34rem;
