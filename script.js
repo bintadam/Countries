@@ -11,10 +11,10 @@ total.textContent = `Total Number of countries: ${countriesLength}`;
 hero.appendChild(total)
 
 const country = countries.forEach(wadan => {
-    console.log(wadan)
+    capitalCountry = wadan.toUpperCase()
     const card = document.createElement("div")
     card.className = "card"
-    card.textContent = wadan;
+    card.textContent = capitalCountry;
     container.appendChild(card);
 })
 
