@@ -10,13 +10,12 @@ const total = document.createElement("p");
 total.textContent = `Total Number of countries: ${countriesLength}`;
 hero.appendChild(total)
 
-const country = countries.forEach(wadan => {
-    capitalCountry = wadan.toUpperCase()
-    const card = document.createElement("div")
-    card.className = "card"
-    card.textContent = capitalCountry;
+function createCard(content) {
+    let card = document.createElement("div");
+    card.className = "card";
+    card.textContent = content;
     container.appendChild(card);
-})
+}
 
 const startingWord = (countries, startWord) => {
     const result = countries.filter(country => country.startsWith(startWord))
@@ -31,6 +30,9 @@ btnStart.addEventListener("click", function(e){
     btnStart.style.backgroundColor = "rgb(98, 23, 169)"
     const numOfCountries = startingWord(countries, search)
     console.log(numOfCountries)
+    numOfCountries.forEach(country => {
+        createCard(country)
+    })
 })
 
 btnSort.addEventListener("click", function(e){
@@ -41,18 +43,14 @@ btnSort.addEventListener("click", function(e){
     if(!toggle){
         img.src = 'images/sort1.png'
         toggle = true;
-        countries.sort((a,b) => a.localeComapare(b));
+        countries.sort((a, b) => a.localeCompare(b));
     } else{
         img.src = "images/sort.png"
         toggle= false;
         countries.sort((a, b) => b.localeCompare(a));
     }
     countries.forEach(country => {
-        let capitalCountry = country.toUpperCase();
-        let card = document.createElement("div");
-        card.className = "card";
-        card.textContent = capitalCountry;
-        container.appendChild(card);
+        createCard(country)
     });
     
 })
