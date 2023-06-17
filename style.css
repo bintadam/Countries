@@ -49,6 +49,20 @@ form input{
     border-radius: 10rem;
 }
 
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2rem;
+}
+
+.card{
+    border: 2px solid #0000;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: blue;
+}
+
 .search{
     position: absolute;
     left: 66%;
