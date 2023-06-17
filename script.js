@@ -18,9 +18,14 @@ function createCard(content) {
     container.appendChild(card);
 }
 
+const displayContent = (countries) => {
+    return countries.forEach(country => createCard(country))
+}
+displayContent(countries)
+
 const startingWord = (countries) => {
-    let startWord = searchInput.value
-    const result = countries.filter(country => country.startsWith(startWord))
+    let startWord = searchInput.value.toLowerCase()
+    const result = countries.filter(country => country.toLowerCase().startsWith(startWord))
     console.log(result)
     return result
 }
