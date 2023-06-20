@@ -41,14 +41,22 @@ h1{
     height: 3.3rem;
 }
 
-form input{
+#search{
     position: absolute;
-    left: 32%;
+    left: 33%;
     top: 42rem;
-    border: none;
-    padding: 1.2rem 17rem;
+    padding: 1.2rem ;
+    width: 47rem;
     border-radius: 10rem;
+    font-size: 2rem;
+    border: none;
 }
+
+#search::placeholder{
+    font-size: 2rem;
+    text-align: start;
+}
+
 #main{
     padding: 5%;
 }
@@ -91,9 +99,9 @@ form input{
 
 .search{
     position: absolute;
-    left: 66%;
-    top: 42rem;
-    height: 4rem;
+    left: 65.5%;
+    top: 41.8rem;
+    height: 4.2rem;
 }
 
 .btn{
