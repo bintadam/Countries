@@ -37,6 +37,22 @@ h1{
     font-weight: 600;
 }
 
+h5{
+    position: absolute;
+    top: 43%;
+    left: 55rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+p{
+    position: absolute;
+    top: 49%;
+    left: 60rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
 #img{
     height: 3.3rem;
 }

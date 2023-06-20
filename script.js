@@ -1,3 +1,4 @@
+const btn = document.querySelector(".btn")
 const btnStart = document.querySelector(".btn-start");
 const btnSearch =  document.querySelector('.btn-search');
 const btnSort =  document.querySelector(".btn-sort");
@@ -7,9 +8,12 @@ const hero = document.querySelector(".hero")
 const container = document.getElementById("cardContainer");
 
 const countriesLength = countries.length
-const total = document.createElement("p");
+const total = document.createElement("h5");
 total.textContent = `Total Number of countries: ${countriesLength}`;
 hero.appendChild(total)
+
+const has = document.createElement("p")
+hero.appendChild(has)
 
 function createCard(content) {
     let card = document.createElement("div");
@@ -23,27 +27,34 @@ const displayContent = (countries) => {
 }
 displayContent(countries)
 
-const startingWord = (countries) => {
+const startingWord = (searchInput,countries) => {
     let startWord = searchInput.value.toLowerCase()
     const result = countries.filter(country => country.toLowerCase().startsWith(startWord))
     console.log(result)
+
     return result
 }
 
 btnStart.addEventListener("click", function(e){
     e.preventDefault()
+
     btnStart.style.backgroundColor = "rgb(98, 23, 169)"
+    btnSort.style.backgroundColor = "rgb(163, 81, 240)"
+    btnSearch.syle.backgroundColor = "rgb(163, 81, 240)"
+
     searchInput.addEventListener("input", function(e){
         container.innerHTML = "";
-        const numOfCountries = startingWord(countries);
+        const numOfCountries = startingWord(searchInput,countries);
         console.log(numOfCountries)
         numOfCountries.forEach(country => {
             createCard(country)
         })
+        has.textContent = `Countries start with  ${searchInput.value.toLowerCase()} are ${numOfCountries.length}`
     })
+
 })
 
-const hasWord = (countries) => {
+const hasWord = (searchInput,countries) => {
     let includes = searchInput.value.toLowerCase()
     const result = countries.filter(country => country.toLowerCase().includes(includes))
     return result
@@ -51,19 +62,30 @@ const hasWord = (countries) => {
 
 btnSearch.addEventListener("click", function(e){
     e.preventDefault()
+
+    btnSort.style.backgroundColor = "rgb(163, 81, 240)"
+    btnStart.style.backgroundColor = "rgb(163, 81, 240)"
     btnSearch.style.backgroundColor = "rgb(98, 23, 169)"
+
     searchInput.addEventListener("input", function(e){
         container.innerHTML = "";
-        const numOfCountries = hasWord(countries);
+        const numOfCountries = hasWord(searchInput,countries);
         numOfCountries.forEach(country => {
             createCard(country)
         })
+        has.textContent = `Countries containing ${searchInput.value.toLowerCase()} are ${numOfCountries.length}`
     })
+
 })
 
 let toggle = false
 btnSort.addEventListener("click", function(e){
     e.preventDefault()
+
+    btnStart.style.backgroundColor = "rgb(163, 81, 240)"
+    btnSearch.style.backgroundColor = "rgb(163, 81, 240)"
+    btnSort.style.backgroundColor = "rgb(98, 23, 169)"
+
     const img = document.getElementById("img");
     container.innerHTML = "";
 
