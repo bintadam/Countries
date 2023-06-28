@@ -116,7 +116,7 @@ p{
     position: absolute;
     left: 66%;
     top: 42rem;
-    height: 4.2rem;
+    height: 4.6rem;
     background-color: rgb(163, 81, 240);
     padding: 1rem;
 }
@@ -164,11 +164,11 @@ p{
     }
 
     p {
-        left: 20%;
+        left: 25%;
         top: 38%;
-        font-size: 1.8rem;
-        font-weight: 300;
-        color: rgb(104, 7, 194);
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: rgba(70, 0, 119, 0.885);
     }
 
     #search {
@@ -181,7 +181,7 @@ p{
         position: absolute;
         left: 72%;
         top: 71%;
-        height: 4rem;
+        height: 4.6rem;
     }
 
     .card-container {
@@ -194,7 +194,7 @@ p{
 
     .btn{
         position: absolute;
-        top: 45%;
+        top: 49%;
         background-color: rgb(163, 81, 240);
         border: none;
         font-size: 1.5rem;
