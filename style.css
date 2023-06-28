@@ -15,7 +15,7 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     height: 100vh;
-    color: #FFF;
+    color: white;
     z-index: 1;
 } 
 
@@ -63,7 +63,6 @@ p{
     top: 42rem;
     padding: 1.2rem ;
     width: 47rem;
-    border-radius: 10rem;
     font-size: 2rem;
     border: none;
 }
@@ -97,8 +96,8 @@ p{
     padding: 30px;
     font-size: 1.5rem;
     font-weight: 500;
-    color: #000;
     z-index: 2;
+    color: rgb(130, 18, 210);
 }
 
 .card::after{
@@ -115,9 +114,11 @@ p{
 
 .search{
     position: absolute;
-    left: 65.5%;
-    top: 41.8rem;
+    left: 66%;
+    top: 42rem;
     height: 4.2rem;
+    background-color: rgb(163, 81, 240);
+    padding: 1rem;
 }
 
 .btn{
@@ -142,4 +143,73 @@ p{
     left: 62%;
     background-color: rgb(163, 81, 240);
     padding: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        height: 30rem;
+    }
+
+    h1 {
+        top: 10%;
+        left: 12%;
+        font-size: 3rem;
+    }
+
+    h5 {
+        left: 20%;
+        top: 28%;
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+
+    p {
+        left: 20%;
+        top: 38%;
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: rgb(104, 7, 194);
+    }
+
+    #search {
+        left: 10%;
+        top: 70%;
+        width: 60%;
+    }
+
+    .search{
+        position: absolute;
+        left: 72%;
+        top: 71%;
+        height: 4rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: auto;
+    }
+
+    .btn{
+        position: absolute;
+        top: 45%;
+        background-color: rgb(163, 81, 240);
+        border: none;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    .btn-start {
+        left: 10%;
+    }
+
+    .btn-search {
+        left: 38%;
+    }
+
+    .btn-sort {
+        left: 75%;
+    }
 }

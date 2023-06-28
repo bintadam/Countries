@@ -68,6 +68,7 @@ btnSearch.addEventListener("click", function(e){
     btnSearch.style.backgroundColor = "rgb(98, 23, 169)"
 
     searchInput.addEventListener("input", function(e){
+        e.preventDefault()
         container.innerHTML = "";
         const numOfCountries = hasWord(searchInput,countries);
         numOfCountries.forEach(country => {
