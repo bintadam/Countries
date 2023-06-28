@@ -40,7 +40,7 @@ btnStart.addEventListener("click", function(e){
 
     btnStart.style.backgroundColor = "rgb(98, 23, 169)"
     btnSort.style.backgroundColor = "rgb(163, 81, 240)"
-    btnSearch.syle.backgroundColor = "rgb(163, 81, 240)"
+    btnSearch.style.backgroundColor = "rgb(163, 81, 240)"
 
     searchInput.addEventListener("input", function(e){
         container.innerHTML = "";
