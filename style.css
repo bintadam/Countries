@@ -15,7 +15,7 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     height: 100vh;
-    color: white;
+    color: rgba(72, 8, 118, 0.885);
     z-index: 1;
 } 
 
@@ -153,13 +153,13 @@ p{
     h1 {
         top: 10%;
         left: 12%;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     h5 {
-        left: 20%;
+        left: 18%;
         top: 28%;
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         font-weight: 400;
     }
 
@@ -167,7 +167,7 @@ p{
         left: 25%;
         top: 38%;
         font-size: 1.6rem;
-        font-weight: 600;
+        font-weight: 500;
         color: rgba(70, 0, 119, 0.885);
     }
 
@@ -197,7 +197,7 @@ p{
         top: 49%;
         background-color: rgb(163, 81, 240);
         border: none;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: #fff;
     }
 
