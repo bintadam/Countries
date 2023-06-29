@@ -197,19 +197,19 @@ p{
         top: 49%;
         background-color: rgb(163, 81, 240);
         border: none;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: #fff;
     }
 
     .btn-start {
-        left: 10%;
+        left: 8%;
     }
 
     .btn-search {
-        left: 38%;
+        left: 36%;
     }
 
     .btn-sort {
-        left: 75%;
+        left: 74%;
     }
 }
